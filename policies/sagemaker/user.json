@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "sagemaker:DescribeEndpoint",
+        "sagemaker:InvokeEndpoint",
+        "sagemaker:CreateEndpoint",
+        "sagemaker:DescribeEndpointConfig",
+        "sagemaker:CreateEndpointConfig",
+        "sagemaker:InvokeEndpoint",
+        "sagemaker:CreateTrainingJob",
+        "sagemaker:DescribeTrainingJob",
+        "sagemaker:CreateModel"
+      ],
+      "Resource": [
+        "arn:aws:sagemaker:*:*:endpoint/*",
+        "arn:aws:sagemaker:*:*:endpoint-config/*",
+        "arn:aws:sagemaker:*:*:training-job/*",
+        "arn:aws:sagemaker:*:*:model/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["logs:DescribeLogStreams"],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/sagemaker/TrainingJobs:log-stream*"
+      ]
+    }
+  ]
+}
