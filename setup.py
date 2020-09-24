@@ -9,11 +9,11 @@ setuptools.setup(
     name="brev_iam_maker",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="Generate access credentials for Brev",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Alec Fong",
 
     package_dir={"": "brev_iam_maker"},
     packages=setuptools.find_packages(where="brev_iam_maker"),
