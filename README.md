@@ -11,7 +11,7 @@
 
 To use this,
 
-1. Clone the repo and follow the setup instrustions for CDK.
+1. Clone the repo and follow the [setup instrustions for CDK](#aws-cdk-setup).
 2. Strengthen the IAM policies as you see fit in `/policies/sagemaker` (will work as is)
 3. Run `cdk synth && cdk deploy`
 4. The previous command will ouput in the console
@@ -21,7 +21,7 @@ To use this,
 
 ## AWS CDK Setup
 
-Read more about aws cdk here
+Read more about [aws cdk here](https://aws.amazon.com/cdk/)
 
 This project is set up like a standard Python project. The initialization
 process also creates a virtualenv within this project, stored under the .env
@@ -60,9 +60,13 @@ At this point you can now synthesize the CloudFormation template for this code.
 $ cdk synth
 ```
 
-Next depl
+Next deploy the CloudFormation and show the resulting outputs.
 
-## Useful commands
+```
+$ cdk deploy
+```
+
+## Useful CDK commands
 
 - `cdk ls` list all stacks in the app
 - `cdk synth` emits the synthesized CloudFormation template
